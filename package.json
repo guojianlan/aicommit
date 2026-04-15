@@ -1,0 +1,27 @@
+{
+  "name": "aicommit",
+  "version": "0.1.0",
+  "description": "AI-powered commit message generator with project-aware context (CLAUDE.md / AGENTS.md / commitlint).",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "aicommit": "./bin/aicommit.mjs"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "link": "pnpm link --global"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.2.12",
+    "@ai-sdk/openai": "^1.3.22",
+    "@commitlint/lint": "^19.8.1",
+    "@commitlint/load": "^19.8.1",
+    "ai": "^4.3.16",
+    "commander": "^13.1.0",
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
